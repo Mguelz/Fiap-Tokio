@@ -2,14 +2,14 @@ package fiap_tokio.exerc_extra.logica;
 
 import java.util.Scanner;
 
-public class Main {
+public class MetodosTeste {
 
 	public static void main(String[] args) {
 		Metodos md = new Metodos();
 		Scanner scanner = new Scanner(System.in);
 
 		int digitado;
-
+		System.out.println("--------------------- Primeiro Exercício Extra ---------------------");
 		System.out.println("digite um numero inteiro");
 		digitado = scanner.nextInt();
 
