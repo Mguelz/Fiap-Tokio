@@ -46,5 +46,17 @@ public class Operadores {
 		number += 5;
 		System.out.println(number);
 
+		number -= 2;
+		System.out.println(number);
+		
+		number *= 2;
+		System.out.println(number);
+		
+		number *= 2;
+		System.out.println(number);
+		
+		
+		
+		
 	}
 }
