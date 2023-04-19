@@ -1,4 +1,4 @@
-package fiap_tokio.aula05;
+package fiap_tokio.aulas.aula05;
 
 public class OperadoresLogicos {
 	public static void main(String[] args) {

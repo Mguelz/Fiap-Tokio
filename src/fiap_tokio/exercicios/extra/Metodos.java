@@ -1,4 +1,4 @@
-package fiap_tokio.exerc_extra.logica;
+package fiap_tokio.exercicios.extra;
 /**
  * 4. Pedir ao usuário a digitação de um número inteiro qualquer, exibir o que se pede:
    a) O número digitado pelo usuário;

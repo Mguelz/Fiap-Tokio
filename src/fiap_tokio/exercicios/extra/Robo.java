@@ -1,4 +1,4 @@
-package fiap_tokio.exerc_extra.logica;
+package fiap_tokio.exercicios.extra;
 
 import java.util.Scanner;
 
