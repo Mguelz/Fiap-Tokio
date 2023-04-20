@@ -28,6 +28,9 @@ public class Tipos {
 		int numeroIn = (int) entrada.nextDouble();
 
 		System.out.println(numeroIn);
+		
+		
+		entrada.close();
 	}
 
 }
