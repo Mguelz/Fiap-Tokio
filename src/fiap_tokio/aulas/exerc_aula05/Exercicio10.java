@@ -27,7 +27,8 @@ public class Exercicio10 {
 		dia = scanner.nextInt();
 
 		diasTotais = idade * 365 + mes * 30 + dia; // somando o ano, mes e dias
-
+		
+		System.out.println("");
 		System.out.println("Voce ja viveu: " + diasTotais);
 
 		scanner.close();

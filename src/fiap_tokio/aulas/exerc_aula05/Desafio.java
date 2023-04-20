@@ -18,9 +18,8 @@ public class Desafio {
 		int qtdDias = 0;
 		int diasTotais = 0, anos = 0, meses = 0, dias = 0;
 
-		System.out.println("Digite quantos dias de vida voce tem");
+		System.out.print("Digite quantos dias de vida voce tem: ");
 		qtdDias = scanner.nextInt();
-
 		System.out.println("");
 
 		// quantidade de anos
@@ -36,7 +35,7 @@ public class Desafio {
 		// quantidade de dias
 		qtdDias += diasTotais / 30;
 		dias = qtdDias;
-		System.out.println("Voce tem " + anos + " anos, " + meses + " meses," + dias + " dias");
+		System.out.println("Voce tem " + anos + " anos, " + meses + " meses, " + dias + " dias");
 		scanner.close();
 	}
 }
