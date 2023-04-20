@@ -23,14 +23,21 @@ public class Desafio {
 
 		System.out.println("");
 
-		anos += qtdDias / 365; // quantidade de anos
+		anos += qtdDias / 365; // quantidade de anos 
+		qtdDias -= (anos * 365); // excluindo todos os 365 dias que é equivalente a ano
+				
 		if (qtdDias < 365) {
 			meses += qtdDias / 12; // quantidade de meses
 		}
+		
+		qtdDias -= (meses * 12); // atualizando a variavel para que ela fique somente com os dias
+		
+		// TODO terminar o calculo de dias
 		if (qtdDias < 30) {
-			qtdDias += diasTotais;
+			qtdDias += diasTotais / 30; // quantidade de dias
 		}
-
+		
+		
 		System.out.println("Voce tem " + anos + " anos, " + meses + " meses," + dias + " dias");
 		scanner.close();
 	}
