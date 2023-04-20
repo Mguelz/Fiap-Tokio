@@ -15,7 +15,7 @@ import java.util.Scanner;
  * divisão será 0.
  * 
  * 
- * @author logonrmlocal
+ * @author Miguel
  *
  */
 public class Exercicio04 {
@@ -36,7 +36,7 @@ public class Exercicio04 {
 //		verificarMultiplicacao = num1 * num2;
 
 		// tentativa com for
-//		for (int i = 0; i < 99999; i++) {
+//		for (int i = 0; i < 999; i++) {
 //			verificarMultiplicacao = num1 * i;
 //			if (num2 == i) {
 //				resposta = true;
