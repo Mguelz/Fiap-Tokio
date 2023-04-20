@@ -13,7 +13,6 @@ package fiap_tokio.exercicios.aula06;
  *
  */
 public class Exercicio07 {
-
 	public static void main(String[] args) {
 
 		int a = 5, b = 7, c = 4, d = 8;
