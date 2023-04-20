@@ -1,4 +1,4 @@
-package fiap_tokio.aulas.exerc_aula05;
+package fiap_tokio.exercicios.aula05;
 
 import java.util.Scanner;
 
