@@ -16,7 +16,7 @@ import java.util.Scanner;
  * 
  * 
  * 
- * @author logonrmlocal
+ * @author Miguel
  *
  */
 public class Exercicio09 {
@@ -29,7 +29,7 @@ public class Exercicio09 {
 		int tipoCliente;
 		
 		System.out.println("Voce ira fazer o calculo de uma: ");
-		System.out.print("1 - 1Industria, 2 - comercio ou 3 - residencia? ");
+		System.out.print("1 - Industria, 2 - Comercio ou 3 - Residencia? ");
 		tipoCliente = scanner.nextInt();
 		
 		System.out.print("Digite o valor da conta: ");

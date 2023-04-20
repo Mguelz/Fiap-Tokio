@@ -36,6 +36,8 @@ public class Exercicio12_Desafio {
 		System.out.println("");
 		
 		
+		
+		
 
 		if (a == b && a == c && b == c) {
 			System.out.println("TRIANGULO EQUILATERO");
