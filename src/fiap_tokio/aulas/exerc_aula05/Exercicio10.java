@@ -1,6 +1,5 @@
 package fiap_tokio.aulas.exerc_aula05;
 
-import java.util.Date;
 import java.util.Scanner;
 
 /**
@@ -27,12 +26,9 @@ public class Exercicio10 {
 		System.out.print(idade + " anos, " + mes + " meses e " + "quantos DIAS voce tem: ");
 		dia = scanner.nextInt();
 
-		idade *= 365;
-		mes *= 12;
-		dia *= 30;
-		diasTotais = idade + mes + dia;
+		diasTotais = idade * 365 + mes * 30 + dia; // somando o ano, mes e dias
 
-		System.out.println("Voce ja viveu: " + idade);
+		System.out.println("Voce ja viveu: " + diasTotais);
 
 		scanner.close();
 	}
