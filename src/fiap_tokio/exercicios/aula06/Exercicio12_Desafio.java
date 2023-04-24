@@ -1,6 +1,5 @@
 package fiap_tokio.exercicios.aula06;
 
-import java.util.Iterator;
 import java.util.Scanner;
 
 /**
