@@ -1,5 +1,6 @@
 package fiap_tokio.exercicios.aula06;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 /**
@@ -34,17 +35,36 @@ public class Exercicio12_Desafio {
 		System.out.print("Digite o valor de C: ");
 		c = scanner.nextInt();
 		System.out.println("");
-		
-		
-		
-		
 
-		if (a == b && a == c && b == c) {
-			System.out.println("TRIANGULO EQUILATERO");
+		// ordenar de forma decrescente
+		if (a < b) {
+			int temp = a;
+			a = b;
+			b = temp;
 		}
-		if(a == b || a == c)
+		if (a < c) {
+			int temp = a;
+			a = c;
+			c = temp;
+		}
+		if (b < c) {
+			int temp = b;
+			b = c;
+			c = temp;
+		}
+//		System.out.println(a);
+//		System.out.println(b);
+//		System.out.println(c);
 
-		scanner.close();
+		// exibir o nome de cada triangulo
+		// colocar na melhor ordem possivel
+		if (a <= b + c) {
+			System.out.println("nao forma triangulo");
+		}else if ((a * a) == (b*b) + (c*c)) {
+			System.out.println("Triangulo Retangulo");
+		}
+
+			scanner.close();
 	}
 
 }
