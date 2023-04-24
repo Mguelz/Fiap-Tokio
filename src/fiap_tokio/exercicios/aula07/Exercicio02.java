@@ -8,7 +8,7 @@ package fiap_tokio.exercicios.aula07;
  * @author 822157057
  *
  */
-public class Exercicio2 {
+public class Exercicio02 {
 
 	public static void main(String[] args) {
 
