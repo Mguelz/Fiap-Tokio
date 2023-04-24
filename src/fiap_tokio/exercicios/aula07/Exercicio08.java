@@ -3,40 +3,44 @@ package fiap_tokio.exercicios.aula07;
 import java.util.Scanner;
 
 /**
+ * Escreva um programa que dado um inteiro n positivo calcula e imprime a soma
+ * de todos os números inteiros entre 1 e n. ▪ Valide a entrada do usuário, só
+ * aceite números positivos!!
  * 
- * Escreva um algoritmo que recebe um inteiro positivo n e imprime todos os
- * divisores positivos de n. ▪ Utilize o laço for.
+ * ▪ Dica: use do/while para a validação e for para a soma.
  * 
- * ▪ Exemplo: Suponha que n = 28, nessa situação devemos imprimir os números 1,
- * 2, 4, 7, 14 e 28, que são todos os divisores do 28.
+ * ▪ Por exemplo, se n = 10 então deverá ser calculado: ▪ 1 + 2 + 3 + 4 + 5 + 6
+ * + 7 + 8 + 9 + 10 = 55 ▪ E a impressão final seria: ▪ A soma de 1 até 10 é: 55
  * 
- * ▪ Dica: para o número ser divisor de n, a divisão precisa ter resto nulo.
  * 
  * @author Miguel
  *
  */
 public class Exercicio08 {
-
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		int num = 0;
+		int num, somaFinal = 0;
 		boolean continuar = false;
 
 		do {
-			System.out.println("Digite um numero inteiro");
+			System.out.println("Digite um numero positivo");
 			num = scanner.nextInt();
 
-			for (int i = 1; i < num + 1; i++) {
-				// verifica se o numero dividido por "i" é divisor (se essa operação resultar em 0, então imprime o numero indicando que ele é divisor)
-				if (num % i == 0) {
-					System.out.println("O numero " + i + " é divisor de " + num);
-				}
+			// somando todos os numeros até chegar ao numero digitado
+			for (int i = 0; i < num + 1; i++) {
+				somaFinal += i;
 			}
+			
+			if (num < 0) {
+				System.out.println("Digite novamente, desta vez um numero positivo");
+				continuar = true;
+			}
+
+			System.out.println("A soma de 1 até " + num + " é: " + somaFinal);
 
 		} while (continuar);
 
 		scanner.close();
 	}
-
 }
