@@ -24,8 +24,8 @@ public class Exercicio12_Desafio {
 		Scanner scanner = new Scanner(System.in);
 
 		int a = 0, b = 0, c = 0;
-		String naoFormaTriangulo;
-		String retangulo, obtusangulo, acutangulo, equilatero, isosceles; // todos esses são triangulos
+//		String naoFormaTriangulo;
+//		String retangulo, obtusangulo, acutangulo, equilatero, isosceles; // todos esses são triangulos
 
 		System.out.print("Digite o valor de A: ");
 		a = scanner.nextInt();
@@ -35,7 +35,7 @@ public class Exercicio12_Desafio {
 		c = scanner.nextInt();
 		System.out.println("");
 
-		// ordenar de forma decrescente
+		// ordenar de forma decrescente. De forma com que A > B > C
 		if (a < b) {
 			int temp = a;
 			a = b;
@@ -56,30 +56,43 @@ public class Exercicio12_Desafio {
 //		System.out.println(c);
 
 		// exibir o nome de cada triangulo
-		// colocar na melhor ordem possivel
 
-		if ((a * a) == (b * b) + (c * c)) {
-			System.out.println("Triangulo Retangulo"); // certo
+		if (a >= (b + c)) {
+			System.out.println("nao forma triangulo"); // somente colocar um else para nao precisar fazer nenhuma logica
+														// || (a <= b + c)
+		} else if (a == b && a == c && b == c) {
+			System.out.println("Triangulo Equilatero");
 		}
-
-		if (a == b && a == c && b == c) {
-			System.out.println("Triangulo Equilatero"); // certo
-		}
-
 		if ((a == b && b != c) || (a != b && b == c) || (c == b && b != a)) {
-			System.out.println("Triangulo Isosceles"); // certo
+			System.out.println("Triangulo Isosceles");
+		}
+		if ((a * a) > ((b * b) + (c * c))) {
+			System.out.println("Triangulo Obtusangulo");
+		}
+		if ((a * a) < ((b * b) + (c * c))) {
+			System.out.println("Triangulo Acutangulo");
+		}
+		if ((a * a) == ((b * b) + (c * c))) {
+			System.out.println("Triangulo Retangulo");
 		}
 
-		if ((a * a) > (b * b) + (c * c)) {
-			System.out.println("Triangulo Obtusangulo"); // certo
-		}
-
-		if ((a * a) < (b * b) + (c * c)) {
-			System.out.println("Triangulo Acutangulo"); // verificar
-		} else {
-			System.out.println("nao forma triangulo"); // somente colocar um else para nao precisar fazer nenhuma logica || (a <= b + c)
-		}
 		scanner.close();
 	}
 
 }
+
+//  // primeira tentativa
+//
+//if (a == b && a == c && b == c) {
+//	System.out.println("Triangulo Equilatero"); // certo
+//} else if ((a == b && b != c) || (a != b && b == c) || (c == b && b != a)) {
+//	System.out.println("Triangulo Isosceles"); // certo
+//} else if ((a * a) > ((b * b) + (c * c))) {
+//	System.out.println("Triangulo Obtusangulo"); // certo
+//} else if ((a * a) < ((b * b) + (c * c))) {
+//	System.out.println("Triangulo Acutangulo"); // somente o 5,7,8 esta funcionando
+//} else if ((a * a) == ((b * b) + (c * c))) {
+//	System.out.println("Triangulo Retangulo"); // certo
+//} else {
+//	System.out.println("nao forma triangulo"); // somente colocar um else para nao precisar fazer nenhuma logica || (a <= b + c)
+//}

@@ -23,7 +23,8 @@ public class Exercicio04 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 
-		int num1, num2, verificarDivisao, verificarMultiplicacao;
+		int num1, num2; 
+//		int verificarDivisao, verificarMultiplicacao;
 		boolean resposta = false;
 
 		System.out.print("Digite um numero: ");
