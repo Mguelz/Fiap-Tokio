@@ -57,13 +57,29 @@ public class Exercicio12_Desafio {
 
 		// exibir o nome de cada triangulo
 		// colocar na melhor ordem possivel
-		if (a <= b + c) {
-			System.out.println("nao forma triangulo");
-		}else if ((a * a) == (b*b) + (c*c)) {
-			System.out.println("Triangulo Retangulo");
+
+		if ((a * a) == (b * b) + (c * c)) {
+			System.out.println("Triangulo Retangulo"); // certo
 		}
 
-			scanner.close();
+		if (a == b && a == c && b == c) {
+			System.out.println("Triangulo Equilatero"); // certo
+		}
+
+		if ((a == b && b != c) || (a != b && b == c) || (c == b && b != a)) {
+			System.out.println("Triangulo Isosceles"); // certo
+		}
+
+		if ((a * a) > (b * b) + (c * c)) {
+			System.out.println("Triangulo Obtusangulo"); // certo
+		}
+
+		if ((a * a) < (b * b) + (c * c)) {
+			System.out.println("Triangulo Acutangulo"); // verificar
+		} else {
+			System.out.println("nao forma triangulo"); // somente colocar um else para nao precisar fazer nenhuma logica || (a <= b + c)
+		}
+		scanner.close();
 	}
 
 }
