@@ -21,34 +21,22 @@ public class Exercicio10Desafio {
 
 	public static void main(String[] args) {
 
-		boolean primo = false;
-		int qtd = 0;
+		
+		
+		primosAte2000JeitoProfessor();
 
-//		primo(); //  metodo para verificar se apenas um numero digitado é primo
-
-		for (int i = 1; i <= 2000; i++) {
-			for (int j = 1; j <= 2000; j++) {
-				if (i % j == 0) {
-					qtd++;
-				}
-			}
-			
-			if (qtd == 2) {
-				primo = true;
-			}
-
-			if (primo) {
-				System.out.println("O numero " + i + " eh um numero primo");
-			}
-			
-			qtd = 0; // zerando a variavel
-			primo = false; // zerando a variavel
-		}
-
+		
+		
+		
 		scanner.close();
-
 	}
 
+	/**
+	 * 
+	 * verifica se apenas um numero digitado é primo
+	 * 
+	 * @return
+	 */
 	public static boolean primo() {
 		boolean primo = false;
 		int qtd = 0;
@@ -69,6 +57,60 @@ public class Exercicio10Desafio {
 		if (primo) {
 			System.out.println("O numero " + num + " eh um numero primo");
 		}
+		
 		return primo;
 	}
+
+	/**
+	 * Minha lógica de como obter todos os numeros primos até 2000
+	 */
+	public static void primosAte2000MinhaForma() {
+		boolean primo = false;
+		int qtd = 0;
+
+		for (int i = 1; i <= 2000; i++) { // for = para aumentar o numero que sera dividido (dividendo)
+			for (int j = 1; j <= 2000; j++) { // for = aumentar o divisor
+				if (i % j == 0) {
+					qtd++;
+				}
+			}
+
+			if (qtd == 2) {
+				primo = true;
+			}
+
+			if (primo) {
+				System.out.println("O numero " + i + " eh um numero primo");
+			}
+
+			qtd = 0; // zerando a variavel
+			primo = false; // zerando a variavel
+		}
+
+	}
+
+	/**
+	 * Forma com que o professor fez
+	 */
+	public static void primosAte2000JeitoProfessor() {
+
+		int num = 2;
+
+		for (int i = 2; i <= 2000; i++) {
+			int divisor = 2;
+
+			while (i % num != 0) {
+				divisor++;
+			}
+
+			if (divisor == num) {
+				System.out.println("O numero " + num + " eh primo");
+			}
+			
+			num++;
+
+		} // for
+
+	} // metodo
+
 }
