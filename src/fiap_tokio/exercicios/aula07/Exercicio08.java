@@ -23,22 +23,24 @@ public class Exercicio08 {
 		int num, somaFinal = 0;
 		boolean continuar = false;
 
+		System.out.println("Digite um numero positivo");
+		
 		do {
-			System.out.println("Digite um numero positivo");
 			num = scanner.nextInt();
 
-			// somando todos os numeros até chegar ao numero digitado
-			for (int i = 0; i < num + 1; i++) {
-				somaFinal += i;
-			}
-			
 			if (num < 0) {
 				System.out.println("Digite novamente, desta vez um numero positivo");
 				continuar = true;
+
+			} else {
+
+				// somando todos os numeros até chegar ao numero digitado
+				for (int i = 0; i < num + 1; i++) {
+					somaFinal += i;
+				}
+
+				System.out.println("A soma de 1 até " + num + " é: " + somaFinal);
 			}
-
-			System.out.println("A soma de 1 até " + num + " é: " + somaFinal);
-
 		} while (continuar);
 
 		scanner.close();
