@@ -24,7 +24,7 @@ public class Exercicio08 {
 		boolean continuar = false;
 
 		System.out.println("Digite um numero positivo");
-		
+
 		do {
 			num = scanner.nextInt();
 

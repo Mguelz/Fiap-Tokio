@@ -24,10 +24,10 @@ public class Exercicio10Desafio {
 		boolean primo = false;
 		int qtd = 0;
 
-//		primo();
+//		primo(); //  metodo para verificar se apenas um numero digitado é primo
 
 		for (int i = 1; i <= 2000; i++) {
-			for (int j = 1; j <= 19; j++) {
+			for (int j = 1; j <= 2000; j++) {
 				if (i % j == 0) {
 					qtd++;
 				}
@@ -40,26 +40,10 @@ public class Exercicio10Desafio {
 			if (primo) {
 				System.out.println("O numero " + i + " eh um numero primo");
 			}
-			qtd = 0;
-			primo = false;
+			
+			qtd = 0; // zerando a variavel
+			primo = false; // zerando a variavel
 		}
-
-//		// depois completa essa parte
-//		System.out.println("calcular se um numero é primo no intervalo de 2 a 2000");
-//		for (int i = 2; i < 2000; i++) {
-//
-//			for (int j = 2; j < 17; j++) {
-//				if ((i % j <= j) && i % j == 0) {
-//					primo = true;
-//				}
-//			}
-//
-//			if (primo) {
-//				System.out.println("O numero " + i + " é um numero primo");
-//			}
-
-//			primo = false;
-//		}
 
 		scanner.close();
 
