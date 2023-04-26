@@ -18,15 +18,38 @@ import java.util.Scanner;
  */
 public class Exercicio10Desafio {
 	static Scanner scanner = new Scanner(System.in);
-	public static void main(String[] args) {
-		
 
-		// depois completa essa parte
+	public static void main(String[] args) {
+
+		boolean primo = false;
+		int qtd = 0;
+
+//		primo();
+
+		for (int i = 1; i <= 2000; i++) {
+			for (int j = 1; j <= 19; j++) {
+				if (i % j == 0) {
+					qtd++;
+				}
+			}
+			
+			if (qtd == 2) {
+				primo = true;
+			}
+
+			if (primo) {
+				System.out.println("O numero " + i + " eh um numero primo");
+			}
+			qtd = 0;
+			primo = false;
+		}
+
+//		// depois completa essa parte
 //		System.out.println("calcular se um numero é primo no intervalo de 2 a 2000");
 //		for (int i = 2; i < 2000; i++) {
 //
 //			for (int j = 2; j < 17; j++) {
-//				if ((i % j <= j) && i % j != 0) {
+//				if ((i % j <= j) && i % j == 0) {
 //					primo = true;
 //				}
 //			}
@@ -34,22 +57,23 @@ public class Exercicio10Desafio {
 //			if (primo) {
 //				System.out.println("O numero " + i + " é um numero primo");
 //			}
+
+//			primo = false;
 //		}
 
 		scanner.close();
 
 	}
 
-	
-	public boolean primo() {
+	public static boolean primo() {
 		boolean primo = false;
 		int qtd = 0;
 
 		System.out.println("Digite um numero primo");
-		int num = scanner .nextInt();
+		int num = scanner.nextInt();
 
 		for (int i = 1; i <= num; i++) { // somente resto por 1 e por ele mesmo tem que dar 0
-			if (num % i == (int) 0) {
+			if (num % i == 0) {
 				qtd++;
 			}
 		}
