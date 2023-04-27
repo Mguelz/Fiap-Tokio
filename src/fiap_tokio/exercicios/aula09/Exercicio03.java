@@ -17,17 +17,24 @@ public class Exercicio03 {
 
 	public static void main(String[] args) {
 		Random random = new Random();
-		double n = random.nextInt(0, 6);
+		double n = random.nextInt(6) + 1; // sorteia numeros de 1 a 5
 
 		if (n > 0) {
-			Double[] vetor = new Double[(int)n];
-			for (double i : vetor) {  // TODO esta dando erro aqui
-				i = Math.random();
+			double[] vetor = new double[(int) n];
+			System.out.println("Voce criou um vetor double com: " + (int) n + " posicoes\n");
+
+			for (int i = 0; i < vetor.length; i++) {
+				vetor[i] = random.nextDouble(10) + 1;
 			}
 
-			for (Double i : vetor) {
-				System.out.println(i);
+//			for (double i : vetor) {  // TODO como adicionar valores aleatorios utilizando o for each?
+//				i = Math.random();	  // TODO COMO FAZ ISSO???!!!
+//			}
+
+			for (Double j : vetor) {
+				System.out.println(j);
 			}
+
 		}
 
 	}

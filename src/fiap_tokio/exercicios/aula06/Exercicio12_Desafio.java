@@ -79,6 +79,28 @@ public class Exercicio12_Desafio {
 		scanner.close();
 	}
 
+	public void logicaProfessor() {
+		int a = 0, b = 0, c = 0;
+
+		if (a >= (b + c)) {
+			System.out.println("nao forma triangulo");
+		} else {
+			if ((a * a) == ((b * b) + (c * c))) {
+				System.out.println("Triangulo Retangulo");
+			} else if ((a * a) > ((b * b) + (c * c))) {
+				System.out.println("Triangulo Obtusangulo");
+			} else {
+				System.out.println("Triangulo Acutangulo");
+			}
+
+			if (a == b && b == c) {
+				System.out.println("Triangulo Equilatero");
+			}
+			if ((a == b && b != c) || (a != b && b == c) || (c == b && b != a)) {
+				System.out.println("Triangulo Isosceles");
+			}
+		}
+	}
 }
 
 //  // primeira tentativa
