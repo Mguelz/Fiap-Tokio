@@ -27,6 +27,7 @@ public class Exercicio04 {
 		double y = 5*x + (Math.pow(2, 2) *x) + Math.cbrt(8) - Math.PI * x / Math.pow(3, 4) + x;
 		
 		System.out.println(y);
+		System.out.println(Math.PI);
 		
 
 	}
