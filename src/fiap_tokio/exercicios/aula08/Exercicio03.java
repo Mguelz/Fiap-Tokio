@@ -33,13 +33,13 @@ public class Exercicio03 {
 			if ((digitado.charAt(i) >= '1') && (digitado.charAt(i) <= '9')) {
 				numericos++;
 			}
-			if (digitado.charAt(i) < 0) { // TODO acertar a lógica
+			if (digitado.charAt(i) == 32) { // "espaço" na tabela ACII é 35
 				emBranco++;
 			}
 		}
 
-		System.out.println("Texto Digitado: " + digitado);
-		System.out.println("Quantidade Maiúsculas: " + maiusculas);
+		System.out.println("\n\nTexto Digitado: " + digitado);
+		System.out.println("\nQuantidade Maiúsculas: " + maiusculas);
 		System.out.println("Quantidade Minúsculas: " + minusculas);
 		System.out.println("Quantidade Numéricos: " + numericos);
 		System.out.println("Quantidade Espaço em Branco: " + emBranco);
