@@ -29,7 +29,7 @@ public class Exercicio04 {
 		System.out.println(y);
 		System.out.println(Math.PI);
 		
-
+		// TODO exercicio de potencia
 	}
 
 }
