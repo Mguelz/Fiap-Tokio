@@ -91,6 +91,8 @@ public class Exercicio10Desafio {
 
 	/**
 	 * Forma com que o professor fez
+	 * 
+	 * TODO terminar este metodo
 	 */
 	public static void primosAte2000JeitoProfessor() {
 
