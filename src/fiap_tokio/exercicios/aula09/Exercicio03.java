@@ -19,20 +19,24 @@ public class Exercicio03 {
 		Random random = new Random();
 		double n = random.nextInt(6) + 1; // sorteia numeros de 1 a 5
 
+		int posicao = 1;
+
 		if (n > 0) {
 			double[] vetor = new double[(int) n];
 			System.out.println("Voce criou um vetor double com: " + (int) n + " posicoes\n");
 
+			// adicionando valores aleatorios nas posições desse vetor
 			for (int i = 0; i < vetor.length; i++) {
 				vetor[i] = random.nextDouble(10) + 1;
 			}
-
 //			for (double i : vetor) {  // TODO como adicionar valores aleatorios utilizando o for each?
 //				i = Math.random();	  // TODO COMO FAZ ISSO???!!!
 //			}
 
+			// imprimindo toda as posições do vetor na tela
 			for (Double j : vetor) {
-				System.out.println(j);
+				System.out.println("posicao - " + posicao + " --> " + j);
+				posicao++;
 			}
 
 		}
