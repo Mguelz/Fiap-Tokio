@@ -48,7 +48,7 @@ public class Exercicio04 {
 		// gerando a media
 		naMedia = naMedia / alunos.length;
 
-		System.out.println("Quantidade de alunos - " + qtdAlunos);
+		System.out.println("\nQuantidade de alunos - " + qtdAlunos);
 		System.out.println("Quantidade de alunos acima da media - " + (int) acimaDaMedia);
 		System.out.println("Quantidade de alunos abaixo da media - " + (int) abaixoDaMedia);
 		System.out.println("Quantidade de alunos na media - " + (int) naMedia);
