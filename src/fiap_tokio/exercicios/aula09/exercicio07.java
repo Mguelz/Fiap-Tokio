@@ -18,23 +18,23 @@ public class exercicio07 {
 		Scanner scanner = new Scanner(System.in);
 
 		String digitado;
-		System.out.println("Qual a quantidade de nomes que voce ira digitar");
-		int qtdNome = scanner.nextInt();
+		int qtdNome;
 
-		
+		System.out.println("Qual a quantidade de nomes que voce ira digitar");
+		qtdNome = scanner.nextInt();
+
 		String[] nome = new String[qtdNome];
 
-		
 		for (int i = 0; i < nome.length; i++) {
 			System.out.print("Digite um nome: ");
 			digitado = scanner.next();
 			nome[i] = digitado;
-			qtdNome++;
+			System.out.println("");
 		}
-		// TODO terminar a logica
 
-		for (String string : nome) {
-			System.out.println(string);
+		// imprimir o array de tras para frente
+		for (int i = nome.length - 1; i >= 0; i--) {
+			System.out.println("Posicao do array: " + i + " --> " + nome[i]);
 		}
 
 		scanner.close();
