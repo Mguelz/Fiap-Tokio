@@ -18,8 +18,8 @@ public class Exercicio04 {
 
 		int num1 = 0, num2 = 0;
 		char digitado;
-		
-		//TODO esta dando erro ao ler o char
+
+		// TODO esta dando erro ao ler o char
 		System.out.print("digite o primeiro numero inteiro: ");
 		num1 = scanner.nextInt();
 		System.out.print("digite a operacao: ");
@@ -27,44 +27,81 @@ public class Exercicio04 {
 		System.out.print("digite o segundo numero inteiro: ");
 		num2 = scanner.nextInt();
 
-		operacao(num1, num2, digitado);
+		operacao(num1, digitado, num2);
 
 		scanner.close();
 	}
 
-	public static char operacao(int a, int b, char digitado) {
+	/**
+	 * este método vai verificar qual o operador digitado pelo usuario e os numeros
+	 * digitador pelo usuario
+	 * 
+	 * @param a
+	 * @param b
+	 * @param digitado
+	 * @return
+	 */
+	public static int operacao(int a, char digitado, int b) {
 		switch (digitado) {
 		case '+': {
-			return '+';
+			return soma(a, b);
 		}
 		case '-': {
-			return '-';
+			return subtracao(a, b);
 		}
 		case '/': {
-			return '/';
+			return divisao(a, b);
 		}
 		case '*': {
-			return '*';
+			return multiplicacao(a, b);
 		}
 		default:
 			throw new IllegalArgumentException("Unexpected value: ");
 		}
 	}
 
-	public int soma(int a, int b) {
+	/**
+	 * soma dois numeros
+	 * 
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	private static int soma(int a, int b) {
 		return a + b;
 	}
 
-	public int subtracao(int a, int b) {
+	/**
+	 * subtrai dois numeros
+	 * 
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	private static int subtracao(int a, int b) {
 		return a - b;
 	}
 
-	public int divisao(int a, int b) {
+	/**
+	 * divide dois numeros
+	 * 
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	private static int divisao(int a, int b) {
 		return a / b;
 	}
 
-	public int mulfiplicacao(int a, int b) {
+	/**
+	 * multiplica dois numeros
+	 * 
+	 * @param a
+	 * @param b
+	 * @return
+	 */
+	private static int multiplicacao(int a, int b) {
 		return a * b;
 	}
-	
+
 }
