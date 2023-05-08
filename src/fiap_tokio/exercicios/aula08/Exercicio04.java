@@ -24,12 +24,10 @@ public class Exercicio04 {
 		double x = Math.sqrt(81);
 		System.out.println(x);
 		
-		double y = 5*x + (Math.pow(2, 2) *x) + Math.cbrt(8) - Math.PI * x / Math.pow(3, 4) + x;
+		// TODO concertar a lógica
+		double y = (5*x + (Math.pow(2, 2) *x) + Math.cbrt(8) - Math.PI * x) / (Math.pow(3, 4) + x);
 		
 		System.out.println(y);
-		System.out.println(Math.PI);
-		
-		// TODO exercicio de potencia
 	}
 
 }
