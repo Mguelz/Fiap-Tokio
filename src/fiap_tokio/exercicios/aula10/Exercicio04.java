@@ -18,7 +18,7 @@ public class Exercicio04 {
 
 		int num1 = 0, num2 = 0;
 		char digitado;
-
+		
 		System.out.print("digite o primeiro numero inteiro: ");
 		num1 = Integer.parseInt(scanner.nextLine());
 		System.out.print("digite a operacao: ");
