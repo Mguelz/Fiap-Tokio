@@ -19,14 +19,15 @@ public class Exercicio04 {
 		int num1 = 0, num2 = 0;
 		char digitado;
 
-		// TODO esta dando erro ao ler o char
 		System.out.print("digite o primeiro numero inteiro: ");
-		num1 = scanner.nextInt();
+		num1 = Integer.parseInt(scanner.nextLine());
 		System.out.print("digite a operacao: ");
 		digitado = scanner.nextLine().charAt(0);
 		System.out.print("digite o segundo numero inteiro: ");
-		num2 = scanner.nextInt();
-
+		num2 = Integer.parseInt(scanner.nextLine());
+		
+		System.out.println(" ");
+		
 		operacao(num1, digitado, num2);
 
 		scanner.close();
@@ -68,7 +69,9 @@ public class Exercicio04 {
 	 * @return
 	 */
 	private static int soma(int a, int b) {
-		return a + b;
+		int soma = a + b;
+		System.out.println(a + " + " + b + " = " + soma);
+		return soma;
 	}
 
 	/**
@@ -79,7 +82,9 @@ public class Exercicio04 {
 	 * @return
 	 */
 	private static int subtracao(int a, int b) {
-		return a - b;
+		int subtracao = a - b;
+		System.out.println(a + " - " + b + " = " + subtracao);
+		return subtracao;
 	}
 
 	/**
@@ -90,7 +95,9 @@ public class Exercicio04 {
 	 * @return
 	 */
 	private static int divisao(int a, int b) {
-		return a / b;
+		int divisao = a / b;
+		System.out.println(a + " / " + b + " = " + divisao);
+		return divisao;
 	}
 
 	/**
@@ -101,6 +108,8 @@ public class Exercicio04 {
 	 * @return
 	 */
 	private static int multiplicacao(int a, int b) {
+		int multiplicacao = a * b;
+		System.out.println(a + " * " + b + " = " + multiplicacao);
 		return a * b;
 	}
 
